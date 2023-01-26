@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
   }
+  
+  body {
+    margin: 0%;
+    font-family: Inter, sans-serif;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    color: unset;
+  }
+
+/* Navbar */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
+    box-shadow: 0px 3px 7.5px rgb(66, 66, 67);
+  }
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-items li {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight:bold;
+    color: #008037;
+  }
+  
+  .nav-items li:hover {
+    background-color: #008037;
+    color: white;
+  }
+  
+  .nav-logo {
+    width: 100px;
+  }
+
+  .bar-nav{
+    display: none;
+  }
+
+  .bar-nav i{
+    color: #008037;
+    align-items: center;
+  }
+  
+/* Hero Section */
+  
+  .hero-img {
+    height: 100vh;
+    width: l00vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("./images/hero-bg.jpg")
+  }
+  
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hero-container{
+    max-width: 800px;
+  }
+  
+  .hero-header {
+    font-size: 40px;
+  }
+  
+  .hero-text {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+  }
+
+  .cta-btn{
+    color: rgba(255, 255, 255, 0.768);
+    background-color:#024f23;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .cta-btn:hover{
+    background-color:black;
+  }
+  
+  /* Services */
+  .section-title{
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    overflow-x: auto;
+    background-color: #024f23;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .card {
+    width: 350px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .card:hover{
+    background-color: rgba(0, 0, 0, 0.482);
+  }
+  
+  .card-img {
+    width: 100%;
+    height:250px;
+    border-radius: 9px;
+    margin-bottom: 9px;
+  }
+
+  .card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+  }
+
+  .card-text {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+
+/* Footer */
+  footer {
+    padding: 15px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    place-content: center;
+    align-items: center;
+  }
+
+  footer div span{
+    padding: 10px;
+  }
+
+  /* contact page */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container{
+  min-width: 600px;
+  border-radius: 10px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .cards-list{
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .form-container{
+    min-width: 300px;
+    border-radius: 10px
+  }
+  .card {
+    padding: 5px;
+  }
+  .nav-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 49px;
+    right: 0px;
+    width: 200px;
+    color: #008037;
+    z-index: 1;
+    background-color: white;
+    padding: 40px 0 0 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px 7.5px rgb(66, 66, 67);
+  }
+
+  .inactive{
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+
+  .nav-items li{
+    width: 100%;
+    text-align: center;
+    width: 180px;
+    color: black;
+  }
+
+  .bar-nav{
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #008037;
+  }
+  .bar-icon{
+    width: 20px;
+    height: 20px;
   }
 }
