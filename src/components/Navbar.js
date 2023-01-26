@@ -12,11 +12,10 @@ class Navbar extends Component {
         return (
             <header>
                 <nav>
-                    
                     <a href="#"><img src={logo} alt="Logo" className="nav-logo"></img></a>
                     <div className={this.state.clicked ? "active": "inactive"}>
                         <ul className="nav-items" >
-                            <Link to="/"><li>Home</li></Link>
+                            <Link to="/GreenGardens"><li>Home</li></Link>
                             <Link to="/contact"><li>Contact</li></Link>
                         </ul>
                     </div>
