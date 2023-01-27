@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GreenGardens/static/css/main.fc751f00.css",
-    "main.js": "/GreenGardens/static/js/main.fd7b8b6e.js",
+    "main.css": "/GreenGardens/static/css/main.7ba94727.css",
+    "main.js": "/GreenGardens/static/js/main.615818b4.js",
     "static/media/service1.jpg": "/GreenGardens/static/media/service1.8c57d51956c8f774edeb.jpg",
     "static/media/service4.jpg": "/GreenGardens/static/media/service4.fbd3c304e7bd8dbc3c0a.jpg",
     "static/media/service5.jpg": "/GreenGardens/static/media/service5.fae294000fca5ea6b3b0.jpg",
@@ -10,11 +10,11 @@
     "static/media/service2.jpg": "/GreenGardens/static/media/service2.4b85e975faedcf253094.jpg",
     "static/media/logo.png": "/GreenGardens/static/media/logo.07038ef86adc83bc90c1.png",
     "index.html": "/GreenGardens/index.html",
-    "main.fc751f00.css.map": "/GreenGardens/static/css/main.fc751f00.css.map",
-    "main.fd7b8b6e.js.map": "/GreenGardens/static/js/main.fd7b8b6e.js.map"
+    "main.7ba94727.css.map": "/GreenGardens/static/css/main.7ba94727.css.map",
+    "main.615818b4.js.map": "/GreenGardens/static/js/main.615818b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc751f00.css",
-    "static/js/main.fd7b8b6e.js"
+    "static/css/main.7ba94727.css",
+    "static/js/main.615818b4.js"
   ]
 }
